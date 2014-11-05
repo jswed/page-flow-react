@@ -105,12 +105,12 @@ html, body, body > section { height: 100%; }
 	font-size: 1.2em;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin: 10px 2px 20px;
+	margin: 10px 0 20px;
 	padding: 0px 20px;
 	line-height: 50px;
 	height: 50px;
 	letter-spacing: 1px;
-	width: 100px;
+	width: 148px;
 	cursor: pointer;
 	display: inline-block;
 	box-shadow: 0 3px 0 rgba(0,0,0,0.1);
@@ -120,6 +120,10 @@ html, body, body > section { height: 100%; }
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+.pt-triggers .dl-menuwrapper button {
+    width: 300px;
 }
 
 .pt-touch-button {
@@ -178,11 +182,5 @@ html, body, body > section { height: 100%; }
 	}
 	.pt-triggers .dl-menuwrapper li.dl-back:after, .dl-menuwrapper li > a:not(:only-child):after {
 		line-height: 24px;
-	}
-}
-
-@media screen and (max-height: 38em) { 
-	.pt-triggers .dl-menuwrapper {
-		display: none;
 	}
 }
