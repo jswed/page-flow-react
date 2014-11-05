@@ -25,6 +25,7 @@ module.exports = function (options) {
     spec.componentWillEnter = function (done) {
         var enterCls = transitionClassName(this.props.transition, 'enter');
         if (enterCls) {
+            console.log("enter as:", enterCls);
             $(this.getDOMNode()).addClass(enterCls).one(ANIMATE_END,
                 this.animateEnd.bind(this, done));
         }
@@ -33,6 +34,7 @@ module.exports = function (options) {
     spec.componentWillLeave = function (done) {
         var leaveCls = transitionClassName(this.props.transition, 'leave');
         if (leaveCls) {
+            console.log("leave as:", leaveCls);
             $(this.getDOMNode()).addClass(leaveCls).one(ANIMATE_END,
                 this.animateEnd.bind(this, done));
         }
