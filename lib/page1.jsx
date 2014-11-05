@@ -1,15 +1,7 @@
 var React = require('react');
 var cx = React.addons.classSet;
 var Animation = require('./mixins/animation');
-var transition = Animation({
-    leave: {
-        'pt-page-rotateCubeLeftOut': 1,
-        'pt-page-ontop': 1
-    },
-    enter: {
-        'pt-page-rotateCubeLeftIn': 1
-    }
-});
+var transition = Animation();
 
 module.exports = React.createClass({
     mixins: [transition],
