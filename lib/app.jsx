@@ -1,7 +1,6 @@
 var React = require('react/addons');
-var flow = require('./flow');
-var Page1 = require('./page1');
 var Menu = require('./menu');
+var Page = require('./page');
 var Transition = React.addons.TransitionGroup;
 
 var REGEX_BACK = /(?!From)(\w*?)(Left|Top|Up)/;
@@ -23,7 +22,7 @@ function inverse(match, keep, dir) {
 module.exports = React.createClass({
     getInitialState: function(){
        return {
-           index: 0,
+           index: 1,
            pageTransition: {
                leave: 'pt-page-rotateCubeLeftOut pt-page-ontop',
                enter: 'pt-page-rotateCubeLeftIn'
@@ -69,12 +68,12 @@ module.exports = React.createClass({
         return (
             <section className="pt-perspective">
                 <Transition>
-                    <Page1 key={index} seq={index+1} transition={transit}/>
+                    <Page key={index} seq={index} transition={transit}/>
                 </Transition>
                 <div className ="pt-triggers">
-                    <button className="pt-touch-button" disabled={index === 0} onClick={this.prev}>←</button>
+                    <button className="pt-touch-button" onClick={this.prev}>←</button>
                 &nbsp;
-                    <button className="pt-touch-button" disabled={index === 5} onClick={this.next}>→</button>
+                    <button className="pt-touch-button" onClick={this.next}>→</button>
                     <Menu onChange={this.switchTransition} />
                 </div>
             </section>
