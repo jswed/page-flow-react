@@ -24,6 +24,12 @@ gulp.task('browserify', ['jsx'], function () {
         .pipe(gulp.dest('build'))
 });
 
+gulp.task('release', ['default'], function () {
+    var gh_pages = require('gulp-gh-pages');
+    return gulp.src(['build/**', 'css/**', 'fonts/**', 'js/**', 'index.html'], {base: '.'})
+        .pipe(gh_pages());
+});
+
 gulp.task('default', ['browserify', 'jsx']);
 gulp.task('watch', function () {
     gulp.watch(source, ['default']);

@@ -1,11 +1,6 @@
-
 Page Transitions
 =========
 
-A showcase collection of various page transition effects using CSS animations.
+A [showcase](http://garryyao.github.io/page-flow-react) collection of various page transition effects in React using CSS animations.
 
-[article on Codrops](http://tympanus.net/codrops/?p=15001)
-
-[demo](http://tympanus.net/Development/PageTransitions/)
-
-[LICENSING & TERMS OF USE](http://tympanus.net/codrops/licensing/)
+[originate from Codrops](http://tympanus.net/codrops/?p=15001)
