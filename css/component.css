@@ -139,10 +139,6 @@ html, body, body > section { height: 100%; }
 	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
 
-.touch .pt-triggers .dl-menuwrapper {
-	display: none;
-}
-
 .pt-message {
 	display: none;
 	position: absolute;
@@ -168,10 +164,6 @@ html, body, body > section { height: 100%; }
 @media screen and (max-width: 47.4375em) {
 	.pt-page h1 {
 		font-size: 3em;
-	}
-
-	.pt-triggers .dl-menuwrapper {
-		display: none;
 	}
 }
 

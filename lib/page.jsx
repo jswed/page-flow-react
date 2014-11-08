@@ -8,7 +8,7 @@ module.exports = React.createClass({
     render: function () {
         var seq = this.props.seq;
         return <div className={'pt-page pt-page-' + seq}>
-            <h1>You're on page {seq}</h1>
+            <h1>page {seq}</h1>
         </div>;
     }
 });
