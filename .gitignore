@@ -1,6 +1,0 @@
-node_modules
-bower_components
-lib/.module-cache
-lib/*.js
-build
-npm-debug.log
