@@ -10,9 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^2.1.1",
-    "lodash": "^2.4.1",
-    "react": "^0.12.0",
-    "when": "^3.5.0"
+    "react": "^0.12.0"
   },
   "devDependencies": {
     "gulp": "^3.8.8",
